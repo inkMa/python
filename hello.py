@@ -4,13 +4,10 @@ import sys
 
 
 def sys_test():
-	print(sys.argv)
-
-
+	print('%s,hello,world!'%sys.argv[1])
 
 
 if __name__ == '__main__' :
-	print('hello,world')
 	sys_test()
 else :
-	print('')
+	print('this is a moudle.')
