@@ -4,8 +4,11 @@ import sys
 
 
 def sys_test():
-	print('%s,hello,world!'%sys.argv[1])
-
+	argc = len(sys.argv)
+	if argc > 1:
+		print('%s,hello,world!'%sys.argv[1])
+	else:
+		print("hello! please input your name.")
 
 if __name__ == '__main__' :
 	sys_test()
